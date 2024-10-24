@@ -12,16 +12,12 @@ env:
   FORCE_COLOR: 2
 
 jobs:
-  run:
-    name: Node ${{ matrix.node }} on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
+  build:
+    runs-on: ripper-light-nodejs
 
     strategy:
-      fail-fast: false
       matrix:
-        os: [ubuntu-latest]
-        node: [18.x]
-
+        node-version: [18.x]
     steps:
       - name: Clone repository
         uses: actions/checkout@v4
