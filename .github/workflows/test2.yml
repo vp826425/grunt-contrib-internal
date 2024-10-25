@@ -36,8 +36,8 @@ jobs:
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
-      - run: npm ci
-      #- run: npm config set _auth $GITHUB_AA_PAT && npm config set registry https://npm.pkg.github.com/ && npm config set always-auth=true && npm config set email=venkateswara.pulagam@theaa.com
+      - run: npm i
+      - run: npm config set _auth $GITHUB_AA_PAT && npm config set registry https://npm.pkg.github.com/ && npm config set email=venkateswara.pulagam@theaa.com
       - run: npm publish 
         env:
           NODE_AUTH_TOKEN: ${{secrets.REGISTRY_TOKEN}}
