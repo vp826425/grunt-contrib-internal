@@ -6,7 +6,7 @@
     "name": "Grunt Team",
     "url": "https://github.com/vp826425/grunt-contrib-internal"
   },
-  "repository":"https://github.com/vp826425/grunt-contrib-internal",
+  "repository": "https://github.com/vp826425/grunt-contrib-internal",
   "license": "MIT",
   "engines": {
     "node": ">=16"
@@ -21,8 +21,13 @@
     "read-package-json": "^6.0.2"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.1",
     "grunt": "^1.6.1",
-    "grunt-contrib-jshint": "^3.2.0"
+    "grunt-contrib-jshint": "^3.2.0",
+    "semantic-release": "^24.2.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
